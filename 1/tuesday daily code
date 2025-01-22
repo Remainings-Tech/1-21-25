@@ -1,0 +1,31 @@
+#Kenny 1/21/25
+#Daily code  crete a function and returns the volume of a cylinder, convert kilometers to miles and returns that value, caculates the final grade A-F
+#solo
+#formula + 3.14*radius*radius*height
+
+def CylinderArea(radius, height):#Whats returning inside
+    return 3.14*radius*radius*height
+
+print(CylinderArea(11, 5))
+#------------------------------------------------
+
+#formula: ,iles + kilometers*.621371
+def KiloToMiles(k):
+    return k * .621371
+
+print(KiloToMiles(100)) #call
+#------------------------------------------------
+
+def GradeCalc(percent):
+    if percent>=90:
+        return "A"
+    elif percent >= 80:
+        return "B"
+    elif percent >= 70:
+        return "C"
+    elif percent >= 60:
+        return "D"
+    else:
+        return "F"
+    
+print("your grade is", GradeCalc(99))
